@@ -15,7 +15,7 @@ namespace FizzBuzz
 
                 while (true)
                 {
-                    FizzBuzz fizzBuzz = new FizzBuzz();
+                    FrizzBuzz fizzBuzz = new FrizzBuzz();
                     var number = GetNumber();
                     Console.WriteLine(fizzBuzz.GetOutput(number));
 
@@ -40,26 +40,6 @@ namespace FizzBuzz
                 }
                 return number;
             }
-        }
-    }
-    class FizzBuzz
-    {
-        public string GetOutput(int number)
-        {
-            if ((number % 3 == 0) && (number % 5 == 0))
-            {
-                return "FizzBuzz";
-            }
-            if (number % 3 == 0)
-            {
-                return "Fizz";
-            }
-            else if (number % 5 == 0)
-            {
-                return "Buzz";
-            }
-            else
-                return number.ToString();
         }
     }
 }
